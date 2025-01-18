@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gestion des Livres</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <table>
+    <thead>
+      <tr>
+        <th>ID</th>
+        <th>Name</th>
+        <th>Description</th>
+        <th>Price</th>
+        <th>Stock</th>
+        <th>Actions</th>
+      </tr>
+    </thead>
+    <tbody></tbody>
+  </table>
+
+  <div class="footer-tab">
+    <button id="add">Ajouter un livre</button>
+  </div>
+
+  <!-- Formulaire de modification -->
+  <div id="modificationsFormContainer" style="display: none;">
+    <form id="modificationsForm">
+      <h2>Modifier un livre</h2>
+      <label for="modifName">Nom :</label>
+      <input type="text" id="modifName" name="name" required><br>
+      <label for="modifDescription">Description :</label>
+      <textarea id="modifDescription" name="description" required></textarea><br>
+      <label for="modifPrice">Prix :</label>
+      <input type="number" id="modifPrice" name="price" required><br>
+      <label for="modifStock">Stock :</label>
+      <input type="number" id="modifStock" name="stock" required><br>
+      <button type="submit">Modifier</button>
+      <button type="button" id="closeButton">Fermer</button>
+    </form>
+  </div>
+
+  <!-- Formulaire d'ajout -->
+  <div id="formulaireAjoutContainer" style="display: none;">
+    <form id="addForm">
+      <h2>Ajouter un livre</h2>
+      <label for="addName">Nom :</label>
+      <input type="text" id="addName" name="name" required><br>
+      <label for="addDescription">Description :</label>
+      <textarea id="addDescription" name="description" required></textarea><br>
+      <label for="addPrice">Prix :</label>
+      <input type="number" id="addPrice" name="price" required><br>
+      <label for="addStock">Stock :</label>
+      <input type="number" id="addStock" name="stock" required><br>
+      <button type="submit">Ajouter</button>
+    </form>
+  </div>
+
+  <script src="./script.js"></script>
+</body>
+</html>

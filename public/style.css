@@ -1,0 +1,119 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Arial', sans-serif;
+    background-color: #f8f9fa; /* Couleur de fond plus claire */
+    color: #495057; /* Couleur de texte plus foncée */
+    min-height: 100vh;
+    position: relative;
+    line-height: 1.6;
+}
+
+table{
+    width: 100%;
+    max-width: 700px;
+    margin: 0 auto;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+    margin-top: 2rem;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+th, td{
+    border: 1px solid #ced4da;
+    padding: 12px;
+    text-align: left;
+}
+
+th{
+    background: #007bff;
+    color : #fff;
+}
+
+tbody tr:hover{
+    background-color: #e9ecef;
+}
+
+td a {
+    color: #007bff;
+    text-decoration: none;
+    transition : color 0.3s ease-in-out;
+}
+
+td a:hover {
+    color: #dc3543;
+}
+
+.footer-tab{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+button {
+    background: #007bff;
+    color: #fff;
+    padding: 10px 15px;
+    border: none;
+    cursor: pointer;
+    font-size: 14px;
+    border-radius: 4px;
+    transition: .2s ease-in-out;
+}
+
+button:hover{
+    background-color: #007bff;
+}
+
+
+form {
+    display: flex;
+    flex-direction: column;
+    max-width: 400px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 20px;
+    margin-top: 20px;
+    border-radius: 20px;
+}
+
+label {
+    margin-bottom: 8px;
+}
+
+input, textarea {
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ced4da;
+    border-radius: 4px;
+    resize: none;
+}
+
+form button {
+    margin-top: 10px;
+}
+
+#modificationsForm, #formulaireAjout{
+    display: grid;
+    place-items: center;
+    background: #f1f1f1;
+    border: solid 2px black;
+    padding: 20px;
+    width: 100%;
+    max-width: 500px;
+    height: auto;
+    position: absolute;
+    top : 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    z-index: 100 !important;
+}
